@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myaddrecipe.css"> 
+    <title>Add Recipe</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+              <a href="inde.html">
+                <img src="logo-white.png" alt="Logo" class="logo">
+              </a>
+            </div>
+            <ul class="nav-buttons">
+                <li><a href="inde.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="login-button">Login</button>
+        </nav>       
+    </header>
+<main>
+    <div class="container">
+        <h1>Add a new recipe</h1>
+        <form action="addRecipe.php" method="POST" enctype="multipart/form-data">
+            <label for="chefName">Chef name:</label>
+            <input type="text" id="chefName" name="chefName" required>
+
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required>
+
+            <label for="recipeTitle">Recipe Title:</label>
+            <input type="text" id="recipeTitle" name="recipeTitle" required>
+
+            <label>Upload Image:</label>
+            <input type="file" name="image"><br><br>
+            
+            <!--<label for="recipeImage">Upload Image:</label>
+            <input type="file" id="recipeImage" name="recipeImage" accept="image/*" onchange="previewImage(event)">-->
+
+            <!--<img id="imagePreview" style="display:none;"/>
+
+            <script>
+                function previewImage(event) {
+                    var reader = new FileReader();
+                    reader.onload = function() {
+                        var output = document.getElementById('imagePreview');
+                        output.src = reader.result;
+                        output.style.display = 'block';
+                    };
+                    reader.readAsDataURL(event.target.files[0]);
+                }
+            </script>-->
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="6" required></textarea> 
+
+            <button type="submit" name="submit-recipe" class="submit-recipe">Submit recipe</button>
+            
+            <button type="reset" class="reset-button">Reset</button>
+            
+        </form>
+    </div>
+</main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Recipe Blog. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com"><img src="Facebook.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com"><img src="Twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com"><img src="Instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

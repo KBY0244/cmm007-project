@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.my-recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.recipe-card button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-recipe, .edit-profile {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-recipe button, .edit-profile button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+/* Navbar styles*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    height: 60px;
+    left: 0;
+    
+  }
+  
+  .logo-container {
+    height: 100%; /* Full height of the navbar */
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  
+  .logo {
+    height: 140px; /* Adjust the height as needed */
+    object-fit: contain; /* This will prevent the logo from stretching */
+    max-width: 100%; /* Ensure the logo does not overflow the navbar */
+  }
+  
+  .nav-buttons {
+    list-style: none;
+    display: flex;
+    align-items: normal;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-buttons li {
+    padding: 0 30px;
+  }
+  
+  .nav-buttons li a {
+    text-decoration: none;
+    color: #bebdbd;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-buttons li a:hover {
+    color: #6e7c83;
+  }
+  
+  .login-button {
+    padding: 5px 15px;
+    background-color: #242425;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .navbar, footer {
+    background: linear-gradient(to left, #1e1c158e, #151d06c2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+/* Footer styles*/
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+  }
+  
+  .footer-content p {
+    font-size: 16px;
+    color: #a8d0e6;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: flex-end;
+  }   
+  
+  .social-media a {
+    margin: 0 15px;
+  }
+  
+  .social-media img {
+    height: 25px; /* Adjust as needed */
+    transition: transform 0.2s ease;
+  }
+  
+  .social-media img:hover {
+    transform: scale(1.1);
+  }

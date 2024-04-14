@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="ASSETS/CSS/global.css" />
+    <link rel="stylesheet" href="ASSETS/CSS/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat Alternates:ital,wght@0,500;1,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montez:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Basic:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="sign-up">
+      <img
+        class="wood-background-icon"
+        alt=""
+        src="ASSETS/IMAGES/wood background.jpg"
+      />
+
+      <form class="sign-up-tab">
+        <div class="logo-white-wrapper">
+          <img
+            class="logo-white-icon1"
+            loading="lazy"
+            alt=""
+            src="ASSETS/IMAGES/logo-white.png"
+          />
+        </div>
+        <div class="share-recipe-prompt">
+          <b class="sign-up-to">Sign up to share recipe !</b>
+        </div>
+        <div class="username-button">
+          <div class="username-button-child"></div>
+          <input class="username" placeholder="Username" type="text" />
+        </div>
+        <div class="email-button">
+          <div class="email-button-child"></div>
+          <input class="email" placeholder="Email" type="text" />
+        </div>
+        <div class="password-button">
+          <div class="password-button-child"></div>
+          <input class="password" placeholder="Password" type="text" />
+        </div>
+        <div class="confirm-password-button">
+          <div class="confirm-password-button-child"></div>
+          <input
+            class="confirm-password"
+            placeholder="Confirm password"
+            type="text"
+          />
+        </div>
+        <button class="sign-up-button">
+          <div class="password1" id="password"></div>
+          <div class="sign-up1">Sign Up</div>
+        </button>
+      </form>
+    </div>
+
+    <script>
+      var password = document.getElementById("password");
+      if (password) {
+        password.addEventListener("click", function (e) {
+          window.location.href = "./ChefLogin.html";
+        });
+      }
+      </script>
+  </body>
+</html>

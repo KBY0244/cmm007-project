@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.name {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+      
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: burlywood;
+    color: white;
+    padding: 0.5rem;
+    width: 100px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: white; 
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    width: 75%;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 70px;
+    font-family: serif;
+}
+
+.columns {
+    height: 450px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 250px;
+    box-shadow: 0 0 10px;
+}
+
+img {
+    border-radius: 50%;
+    border: 1px solid burlywood;
+    height: 34%;
+    width: 60%;
+    max-width: 60%;
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.price {
+    color: red;
+    font-weight: bolder;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-family: serif;
+}
+
+p {
+    margin-bottom: 35px;
+}
+
+h3,p,.price {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media (max-width :992px){
+    .navbar .links
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    .action_btn {
+        display: none;
+    }
+    
+}
+
+@media (max-width :576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    .columns {
+        
+    }
+
+}

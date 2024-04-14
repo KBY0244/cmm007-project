@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+/* Center the form horizontally and vertically */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('wood background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* Navbar styles*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    height: 60px;
+    left: 0;
+    
+  }
+  
+  .logo-container {
+    height: 100%; /* Full height of the navbar */
+    display: flex;
+    align-items: center;   
+  }
+  
+  .logo {
+    height: 140px; /* Adjust the height as needed */
+    object-fit: contain; /* This will prevent the logo from stretching */
+    max-width: 100%; /* Ensure the logo does not overflow the navbar */
+  }
+  
+  .nav-buttons {
+    list-style: none;
+    display: flex;
+    align-items: normal;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-buttons li {
+    padding: 0 30px;
+  }
+  
+  .nav-buttons li a {
+    text-decoration: none;
+    color: #bebdbd;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-buttons li a:hover {
+    color: #6e7c83;
+  }
+  
+  .login-button {
+    padding: 5px 15px;
+    background-color: #242425;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .navbar, footer {
+    background: linear-gradient(to left, #1e1c158e, #151d06c2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+/* Footer styles*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+  
+.footer-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+
+}
+
+.footer-content p {
+font-size: 16px;
+color: #a8d0e6;
+}
+
+.social-media {
+display: flex;
+justify-content: flex-end;
+}   
+
+.social-media a {
+margin: 0 15px;
+}
+
+.social-media img {
+height: 25px; /* Adjust as needed */
+transition: transform 0.2s ease;
+}
+
+.social-media img:hover {
+transform: scale(1.1);
+}
+
+/* Form styles*/
+
+.login-container {
+background-color: #26231b8a(49, 49, 49, 0.632);
+padding: 30px;
+border-radius: 30px;
+box-shadow: 0 0 20px rgba(239, 230, 212, 0.629);
+max-width: 400px;
+width: 60%;
+margin: 0 auto;
+}
+
+h1 {
+text-align: center;
+color: whitesmoke;
+padding-bottom: 60px;
+margin: 0;
+flex: 1;
+position: relative;
+font-size: auto;
+letter-spacing: -0.01em;
+line-height: 150%;
+font-weight: 700;
+font-family: inherit;
+}
+
+.login-form {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+.form-group {
+margin-bottom: 15px;
+text-align: center;
+padding-bottom: 10px;
+}
+
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+padding: 10px;
+width: 100%;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    outline: none;
+    border-color: #100c01; /* Change to the color you want */
+}
+
+.login-tab input[type="submit"] {
+background-color: black;
+color: #d5edf3;
+border: none;
+padding: 10px;
+border-radius: 10px;
+cursor: pointer;
+width: 150px;
+text-align: center;
+}
+
+.login-tab input[type="submit"]:hover {
+background-color: rgb(122, 121, 121);
+text-align: center;
+}   
+
+.login-tab{
+text-align: center;
+}
+
+/* Add styles for the "Forgot Password" link */
+.forgot-password {
+text-align: center;
+margin-top: 10px;
+padding-bottom: 30px;
+}
+
+.forgot-password a{
+text-decoration: none;
+color: rgb(220, 55, 55);
+}
+
+/* Add styles for the "Sign up now" link */
+.signup-link {
+text-align: center;
+margin-top: 20px;
+color: white;
+}
+
+
+.signup-link a{
+text-decoration: none;
+color: rgb(63, 154, 24);
+}
+
+ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+a {
+text-decoration: none;
+}
