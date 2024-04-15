@@ -36,7 +36,7 @@
                 <img src="recipe1.jpg" alt="Recipe 1">
                 <h3>Recipe 1</h3>
                 <a href="editrecipe.html"><button class="edit-recipe">Edit</button></a>
-                <button class="delete-recipe">Delete</button>
+                <a href="deleteRecipe.html"><button class="delete-recipe">Delete</button></a>
             </div>
             <!-- More recipe cards... -->
         </section>
