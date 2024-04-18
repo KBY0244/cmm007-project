@@ -1,0 +1,33 @@
+.recipe img {
+    max-width: 100% !important;
+    height: auto !important;
+    margin-bottom: 10px !important;
+    
+  }
+  
+  .recipe p {
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .recipe ul,
+  .recipe ol {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .recipe ul li,
+  .recipe ol li {
+    margin-bottom: 5px;
+  }
+  
+  
+  footer button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+  }
+  

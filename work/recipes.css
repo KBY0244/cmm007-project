@@ -84,6 +84,7 @@ footer {
   color: #fff;
   padding: 10px 20px;
   text-align: center;
+  left: 0;
 }
 
 .footer-content {
@@ -140,28 +141,134 @@ footer {
   color: white; /* Or any color you want */
 }
 
+.category {
+  text-align: left;
+  color: #edeaea;
+}
 
-.content {
+
+.content1 {
   display: flex;
   justify-content: space-between;
   margin: 20px;
 }
 aside {
-  width: 20%;
-  background-color: #bebdbd;
+  width: 15%; /* Decreased width */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 20px; /* Added margin-right to create space between aside and main content */
+  margin-bottom: 60px;
+}
+
+aside h2 {
+  color: #333; /* Color for the topic */
+  font-size: 18px; /* Adjust font size as needed */
+  margin-bottom: 10px; /* Added margin-bottom for spacing */
 }
 .categories {
   display: flex;
   justify-content: space-between;
   width: 75%;
 }
+
+.category-card {
+  width: calc(33.33% - 10px); /* Adjusted width to fit three cards in a row */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin: 30px 30px; /* Added margin for spacing between cards */
+  background-size: cover;
+  margin-bottom: 80px;
+}
+
+.breakfast {
+  background-image: url('IMAGES/Mmori\ koko.jpg');
+}
+
+.main-meals {
+  background-image: url('IMAGES/Jollof.jpg');
+}
+
+.drinks {
+  background-image: url('IMAGES/sobolo\ 2.jpg');
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
 .category {
-  text-align: center;
+  text-align: center; 
+  color: #000;
+}
+
+.category h2 {
+  color: #fff;
+  position: bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.recipe-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns with a minimum width of 300px */
+  grid-gap: 20px;
+
+  padding: 0 20px; /* Add some padding to the container */
+  margin-bottom: 20px; /* Add margin at the bottom */
 }
 
 
+.recipe {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+.recipe h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
 
+.recipe img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: cover; /* Ensure the image covers the entire container */
+  object-position: top; /* Position the image at the top */
+}
+
+.recipe p {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.recipe ul,
+.recipe ol {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.recipe ul li,
+.recipe ol li {
+  margin-bottom: 5px;
+}
 
 
 footer button {

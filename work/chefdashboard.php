@@ -15,39 +15,30 @@
               </a>
             </div>
             <ul class="nav-buttons">
-                <li><a href="inde.html">Home</a></li>
+                <li><a href="recipes1.html">Recipes</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button class="login-button">Login</button>
+            <a href="homepage.php"><button class="login-button">Logout</button></a>
         </nav>       
     </header>
     <main>
         <section class="dashboard-overview">
-            <!-- Dashboard overview goes here -->
+            
             <h2>Welcome, Chef!</h2>
             
-            <p>Here you can manage your recipes and edit your profile.</p>
-        </section>
-        <section class="my-recipes">
-            <!-- Recipe cards go here -->
-            <h2>My Recipes</h2>
-            <div class="recipe-card">
-                <img src="recipe1.jpg" alt="Recipe 1">
-                <h3>Recipe 1</h3>
-                <a href="editrecipe.html"><button class="edit-recipe">Edit</button></a>
-                <a href="deleteRecipe.html"><button class="delete-recipe">Delete</button></a>
-            </div>
-            <!-- More recipe cards... -->
-        </section>
+            <p>Here you can manage your recipes.</p>
+        
         <section class="add-recipe">
-            <!-- Add a Recipe button goes here -->
             <a href="myaddrecipe.html"><button>Add a Recipe</button></a>
         </section>
-        <section class="edit-profile">
-            <!-- Edit Profile goes here -->
-            <h2>Edit Profile</h2>
-            <button>Edit Profile</button>
+
+        <section class="delete-recipe">          
+            <a href="deleteRecipe.html"><button class="delete-recipe">Delete a Recipe</button></a>
+        </section>
+
+        <section class="edit-recipe">
+            <a href="editrecipe.html"><button class="edit-recipe">Edit a recipe</button></a>
         </section>
     </main>
     <footer>

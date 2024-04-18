@@ -1,14 +1,23 @@
 <?php
 include('../work/connection.php'); 
 
-// fetch recipes the database
-$query = "SELECT * FROM addrecipe";
+// Category fetch
+$category_name = "Main meal"; 
+
+// fetch recipes of a specific category from database
+$query = "SELECT * FROM addrecipe WHERE category = '$category_name'";
 $result = mysqli_query($db, $query);
 
 
 if(mysqli_num_rows($result) > 0) {
+   
+    echo '<div class="recipe-container">';
     
+   
     while($row = mysqli_fetch_assoc($result)) {
+        
+        echo '<div class="recipe">';
+        
         echo "<h3>{$row['recipeTitle']}</h3>";
         
         if(!empty($row['recipeImage'])) {
@@ -26,10 +35,15 @@ if(mysqli_num_rows($result) > 0) {
         } else {
             echo "<h4 style='max-width: 450px; max-height: 450px;'>No Directions provided</h4>";
         }
-        echo "<hr>";
+        
+        
+        echo "</div>";
     }
+    
+    
+    echo "</div>";
 } else {
     
-    echo "No recipes found.";
+    echo "No recipes found in the category: $category_name";
 }
 ?>

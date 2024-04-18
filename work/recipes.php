@@ -28,7 +28,13 @@
     </section>
     <section class="content">
         <aside>
+        <p>Ghanaian food is diverse, shaped by the country’s climate, history, and people. 
+              Spicy soups and stews dominate,featuring ingredients like tomatoes, onions, pepper, ginger, and indigenous spices.
+            </p>
             <p>
+              While Ghanaians fiercely claim to make the best Jollof rice, 
+              Waakye quietly takes the mantle of the Ghanaian national dish.
+              Almost every event venue serves it, and street vendors offer the most authentic experience.
             </p>
         </aside>
       <section id="categories" class="categories">

@@ -35,7 +35,7 @@ if (isset($_POST['submit-recipe'])) { // Changed to match the button's name attr
             // Execute query and handle result
             if (mysqli_query($con, $query)) {
                 echo "Individual recipe added successfully";
-                echo "<a href='homepage.html'>Return to Home Page</a>";
+                echo "<a href='chefdashboard.php'>Return to dashboard</a>";
             } else {
                 echo "Error adding Individual Recipe: " . mysqli_error($con);
             }

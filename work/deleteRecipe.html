@@ -1,11 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Delete Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete recipe</title>
+    <link rel="stylesheet" href="editrecipe.css">
 </head>
 <body>
-    <h1>Welcome to Shahana's Cooking Blog :)</h1>
-    <br><br>
-    <h3>You can Delete a Recipe here</h3>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+              <a href="inde.html">
+                <img src="logo-white.png" alt="Logo" class="logo">
+              </a>
+            </div>
+            <ul class="nav-buttons">
+                <li><a href="inde.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="homepage.php"><button class="login-button">Logout</button></a>
+        </nav>       
+    </header>
+    <h1>Delete recipes</h1>
     <br><br>
     <form method="post" action="deleteRecipe.php">
         <label>Recipe Title:</label>
@@ -15,5 +32,15 @@
         &nbsp;&nbsp;&nbsp;&nbsp;
         <input type="button" value="Reset" />
     </form>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Recipe Blog. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com"><img src="Facebook.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com"><img src="Twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com"><img src="Instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

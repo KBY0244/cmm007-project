@@ -19,13 +19,13 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <button class="login-button">Login</button>
+                <button class="login-button">Admin</button>
             </nav>       
         <h1>Welcome! Fix A Meal.</h1>
     </header>
     <main>
         <section class="recipes">
-            <a href="recipes.php">Recipes</a>
+            <a href="recipes.html">Recipes</a>
         </section>
         <section class="chef">
             <a href="cheflogin.html">Chef</a>
