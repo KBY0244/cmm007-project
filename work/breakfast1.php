@@ -23,7 +23,7 @@
     </nav>       
 </header>
 <section class="banner">
-     <a href="#categories"><h1>Main meals</h1></a>
+     <a href="#categories"><h1>Fix a quick breakfast!</h1></a>
       
   </section>
   
@@ -101,7 +101,7 @@
               echo "<h3>{$row['recipeTitle']}</h3>";
 
               if(!empty($row['recipeImage'])) {
-                  echo "<img src='uploads/{$row['recipeImage']}' alt='recipeImage' style='max-width: 350px; max-height: 350px;'>";
+                  echo "<img src='uploads/{$row['recipeImage']}' alt='recipeImage' style='max-width: 100%; max-height: 100%;'>";
               }
 
               if(isset($row['ingredients'])) {

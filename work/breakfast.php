@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Page</title>
+    <title>Breakfast Page</title>
     <link rel="stylesheet" href="recipes.css">
 </head>
 <body>
   <header>
     <nav class="navbar">
         <div class="logo-container">
-          <a href="index.html">
+          <a href="inde.html">
             <img src="logo-white.png" alt="Logo" class="logo">
           </a>
         </div>
@@ -24,16 +24,16 @@
   </header>
   
   <section class="banner">
-     <a href="#categories"><h1>Breakfast</h1></a>
+     <a href="#categories"><h1>Fix a quick breakfast!</h1></a>
   </section>
   
   <section class="content">
     <div class="recipe-container">
-      <h2>Main Meals</h2>
+      <h2>Breakfast</h2>
       
       <!-- Manually adding breakfast -->
 
-      <!-- First recipe -->
+      <!-- First breakfast -->
       <div class="recipe">
           <h3>Mmɔri koko (Ghanaian Spiced Corn Porridge)</h3>
           <img src="Mmori koko.jpg" alt="Mmɔri koko">
@@ -55,7 +55,7 @@
           </ol>
       </div>
 
-      <!-- Second recipe -->
+      <!-- Second breakfast -->
 
       <div class="recipe">
           <h3>Akara (Bean Cakes)</h3>
@@ -79,9 +79,9 @@
           </ol>
       </div>
       
-      <!-- Third recipe -->
-      <!-- Fourth recipe -->
-      <!-- Fifth recipe -->
+      <!-- Third breakfast -->
+      <!-- Fourth breakfast -->
+      <!-- Fifth breakfast -->
 
       <!-- Fetching recipes from the database -->
       <?php
@@ -101,7 +101,7 @@
               echo "<h3>{$row['recipeTitle']}</h3>";
 
               if(!empty($row['recipeImage'])) {
-                  echo "<img src='uploads/{$row['recipeImage']}' alt='recipeImage' style='max-width: 350px; max-height: 350px;'>";
+                  echo "<img src='uploads/{$row['recipeImage']}' alt='recipeImage' style='max-width: 100%; max-height: 100%;'>";
               }
 
               if(isset($row['ingredients'])) {

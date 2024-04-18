@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Page</title>
+    <title>Main meals Page</title>
     <link rel="stylesheet" href="recipes.css">
     
 </head>
@@ -11,7 +11,7 @@
   <header>
     <nav class="navbar">
         <div class="logo-container">
-          <a href="index.html">
+          <a href="inde.html">
             <img src="logo-white.png" alt="Logo" class="logo">
           </a>
         </div>
@@ -24,7 +24,7 @@
     </nav>       
 </header>
     <section class="banner">
-       <a href="#categories"><h1>Main meals</h1></a>
+       <a href="#categories"><h1>Fix a Meal!</h1></a>
     </section>
     <section class="content">
         
@@ -34,7 +34,7 @@
                 <!-- Manually adding Ghanaian main meals -->
                 <div class="recipe">
                     <h3>Fufu and Light Soup</h3>
-                    <img src="fufu-light-soup.jpg" alt="Fufu and Light Soup">
+                    <img src="IMAGES\fufu.jpeg" alt="Fufu and Light Soup">
                     <h4>Ingredients:</h4>
                     <ul>
                         <li>Fufu (cassava and plantain dough)</li>
@@ -59,7 +59,7 @@
 
                 <div class="recipe">
                     <h3>Banku and Tilapia</h3>
-                    <img src="banku-tilapia.jpg" alt="Banku and Tilapia">
+                    <img src="IMAGES\Banku.jpg" alt="Banku and Tilapia">
                     <h4>Ingredients:</h4>
                     <ul>
                         <li>Banku (fermented corn and cassava dough)</li>
@@ -83,14 +83,14 @@
                     </ol>
                 </div>
                 
-                <!-- Fetch recipes from the database -->
+                <!-- Fetching recipes from the database -->
                 <?php
                 include('../work/connection.php'); 
 
                 
                 $category_name = "Main meal"; 
 
-                //  fetch recipes of a specific category from the database
+                //  fetching recipes of a specific category from the database
                 $query = "SELECT * FROM addrecipe WHERE category = '$category_name'";
                 $result = mysqli_query($db, $query);
 
@@ -98,13 +98,13 @@
                 if(mysqli_num_rows($result) > 0) {
                     
                     while($row = mysqli_fetch_assoc($result)) {
-                        
+                       // Start recipe 
                         echo '<div class="recipe">';
 
                         echo "<h3>{$row['recipeTitle']}</h3>";
 
                         if(!empty($row['recipeImage'])) {
-                            echo "<img src='uploads/{$row['recipeImage']}' alt='recipeImage' style='max-width: 350px; max-height: 350px;'>";
+                            echo "<img src='uploads/{$row['recipeImage']}' alt='recipeImage' style='max-width: 100%; max-height: 100%;'>";
                         }
                         
                         if(isset($row['ingredients'])) {
@@ -140,7 +140,7 @@
                         } else {
                             echo "<h4>No Directions provided</h4>";
                         }
-                        // Close the recipe container
+                        // End recipe container
                         echo "</div>";
                     }
                 } else {
