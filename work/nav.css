@@ -20,7 +20,7 @@
   }
   
   .logo-container {
-    height: 100%; /* Full height of the navbar */
+    height: 100%; /* the full height of the navbar */
     display: flex;
     align-items: center;
     
@@ -28,9 +28,9 @@
   
   
   .logo {
-    height: 140px; /* Adjust the height as needed */
-    object-fit: contain; /* This will prevent the logo from stretching */
-    max-width: 100%; /* Ensure the logo does not overflow the navbar */
+    height: 140px; /* I would use this to adjust the height */
+    object-fit: contain; /* this prevents the logo from stretching */
+    max-width: 100%; 
   }
   
   .nav-buttons {
@@ -105,7 +105,7 @@
   }
   
   .social-media img {
-    height: 25px; /* Adjust as needed */
+    height: 25px; 
     transition: transform 0.2s ease;
   }
   

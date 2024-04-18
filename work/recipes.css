@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -25,16 +26,16 @@ body {
 }
 
 .logo-container {
-  height: 100%; /* Full height of the navbar */
+  height: 100%; 
   display: flex;
   align-items: center;
   
 }
 
 .logo {
-  height: 140px; /* Adjust the height as needed */
-  object-fit: contain; /* This will prevent the logo from stretching */
-  max-width: 100%; /* Ensure the logo does not overflow the navbar */
+  height: 140px; 
+  object-fit: contain; 
+  max-width: 100%; 
 }
 
 .nav-buttons {
@@ -110,7 +111,7 @@ footer {
 }
 
 .social-media img {
-  height: 25px; /* Adjust as needed */
+  height: 25px; 
   transition: transform 0.2s ease;
 }
 
@@ -133,12 +134,12 @@ footer {
 
 .banner a {
   text-decoration: none;
-  color: inherit; /* Or any color you want */
+  color: inherit; 
 }
 
 .banner-text {
   text-align: center;
-  color: white; /* Or any color you want */
+  color: white; 
 }
 
 .category {
@@ -153,19 +154,19 @@ footer {
   margin: 20px;
 }
 aside {
-  width: 15%; /* Decreased width */
+  width: 15%; 
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;
-  margin-right: 20px; /* Added margin-right to create space between aside and main content */
+  margin-right: 20px; 
   margin-bottom: 60px;
 }
 
 aside h2 {
-  color: #333; /* Color for the topic */
-  font-size: 18px; /* Adjust font size as needed */
-  margin-bottom: 10px; /* Added margin-bottom for spacing */
+  color: #333; 
+  font-size: 18px;
+  margin-bottom: 10px; 
 }
 .categories {
   display: flex;
@@ -174,18 +175,18 @@ aside h2 {
 }
 
 .category-card {
-  width: calc(33.33% - 10px); /* Adjusted width to fit three cards in a row */
+  width: calc(33.33% - 10px); /* Adjusting the width to fit about three recipes in a row */
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 40px;
-  margin: 30px 30px; /* Added margin for spacing between cards */
+  margin: 30px 30px; 
   background-size: cover;
   margin-bottom: 80px;
 }
 
 .breakfast {
-  background-image: url('IMAGES/Mmori\ koko.jpg');
+  background-image: url('IMAGES/hausa\ koko\ 2.jpg');
 }
 
 .main-meals {
@@ -222,11 +223,10 @@ a {
 
 .recipe-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns with a minimum width of 300px */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   grid-gap: 20px;
-
-  padding: 0 20px; /* Add some padding to the container */
-  margin-bottom: 20px; /* Add margin at the bottom */
+  padding: 0 20px; 
+  margin-bottom: 20px; 
 }
 
 
@@ -250,8 +250,8 @@ a {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
-  object-fit: cover; /* Ensure the image covers the entire container */
-  object-position: top; /* Position the image at the top */
+  object-fit: cover; 
+  object-position: top; 
 }
 
 .recipe p {

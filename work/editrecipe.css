@@ -34,7 +34,7 @@
   }
   
   .logo-container {
-    height: 100%; /* Full height of the navbar */
+    height: 100%; 
     display: flex;
     align-items: center;
     
@@ -115,7 +115,7 @@
   }
   
   .social-media img {
-    height: 25px; /* Adjust as needed */
+    height: 25px; 
     transition: transform 0.2s ease;
   }
   

@@ -34,16 +34,16 @@ header {
 }
 
 .logo-container {
-  height: 100%; /* Full height of the navbar */
+  height: 100%; 
   display: flex;
   align-items: center;
   
 }
 
 .logo {
-  height: 140px; /* Adjust the height as needed */
-  object-fit: contain; /* This will prevent the logo from stretching */
-  max-width: 100%; /* Ensure the logo does not overflow the navbar */
+  height: 140px; 
+  object-fit: contain; 
+  max-width: 100%; 
 }
 
 .nav-buttons {
@@ -85,10 +85,10 @@ header {
 
 h1 {
   font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 3em; /* Adjust size as needed */
-  color: black; /* Adjust color as needed */
-  text-shadow: 2px 2px 4px #555555; /* Adds a shadow to the text */
-  text-align: center; /* Centers the text */
+  font-size: 3em; 
+  color: black; 
+  text-shadow: 2px 2px 4px #555555; 
+  text-align: center; 
   animation-delay: 0.5s;
   
 }
@@ -111,15 +111,13 @@ main {
 
 .recipes a, .chef a {
   position: absolute;
-  bottom: 20px; /* Adjust the distance from the bottom */
-  left: 50%;
-  transform: translateX(-50%); /* Center the text horizontally */
-  text-decoration: none; /* Remove the hyperlink styling */
-  color: #fff; /* Set the text color */
-  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
-  padding: 12px 24px; /* Add some padding */
-  border-radius: 5px; /* Optional: round the corners */
-  font-size: 35px;
+  bottom: 20px; 
+  transform: translateX(-50%); 
+  text-decoration: none; 
+  color: #fff; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 12px 24px; 
+  border-radius: 5px; 
   box-shadow: none;
   text-align: center;
   margin: 0;
@@ -141,8 +139,8 @@ main {
 }
 
 .recipes:hover, .chef:hover {
-  transform: scale(1.05); /* Slightly increase the size on hover */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  transform: scale(1.05); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
 }
 
 footer {
@@ -177,7 +175,7 @@ footer {
 }
 
 .social-media img {
-  height: 25px; /* Adjust as needed */
+  height: 25px; 
   transition: transform 0.2s ease;
 }
 

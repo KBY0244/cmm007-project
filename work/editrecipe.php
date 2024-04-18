@@ -9,20 +9,19 @@
 </head>
 <body>
     <header>
-        <!-- Header content -->
+        
     </header>
     <main>
         <div class="container">
             <h1>Edit Recipe</h1>
             <?php
 
-            // error_reporting(E_ALL);
-            // ini_set('display_errors', 1);
+           
 
-            // Include the connection file
+            // connection
             include('connection.php');
 
-            // Check if a recipe title is provided via POST
+            
             if(isset($_POST['recipeTitle'])) {
                 $recipeTitle = $_POST['recipeTitle'];
                 $sql = "SELECT * FROM addrecipe WHERE recipeTitle='$recipeTitle'";
@@ -66,7 +65,7 @@
         </div>
     </main>
     <footer>
-        <!-- Footer content -->
+       
     </footer>
 </body>
 </html>

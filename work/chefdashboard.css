@@ -89,9 +89,9 @@ main {
   
   
   .logo {
-    height: 140px; /* Adjust the height as needed */
-    object-fit: contain; /* This will prevent the logo from stretching */
-    max-width: 100%; /* Ensure the logo does not overflow the navbar */
+    height: 140px; 
+    object-fit: contain; 
+    max-width: 100%; 
   }
   
   .nav-buttons {
@@ -166,7 +166,7 @@ main {
   }
   
   .social-media img {
-    height: 25px; /* Adjust as needed */
+    height: 25px; 
     transition: transform 0.2s ease;
   }
   

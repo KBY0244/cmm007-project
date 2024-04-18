@@ -33,15 +33,15 @@ body {
   }
   
   .logo-container {
-    height: 100%; /* Full height of the navbar */
+    height: 100%; 
     display: flex;
     align-items: center;   
   }
   
   .logo {
-    height: 140px; /* Adjust the height as needed */
-    object-fit: contain; /* This will prevent the logo from stretching */
-    max-width: 100%; /* Ensure the logo does not overflow the navbar */
+    height: 140px; 
+    object-fit: contain; 
+    max-width: 100%; 
   }
   
   .nav-buttons {
@@ -115,7 +115,7 @@ margin: 0 15px;
 }
 
 .social-media img {
-height: 25px; /* Adjust as needed */
+height: 25px; 
 transition: transform 0.2s ease;
 }
 
@@ -173,7 +173,7 @@ border-radius: 5px;
 .form-group input[type="email"]:focus,
 .form-group input[type="password"]:focus {
     outline: none;
-    border-color: #100c01; /* Change to the color you want */
+    border-color: #100c01; 
 }
 
 .login-tab input[type="submit"] {
@@ -196,7 +196,7 @@ text-align: center;
 text-align: center;
 }
 
-/* Add styles for the "Forgot Password" link */
+
 .forgot-password {
 text-align: center;
 margin-top: 10px;
@@ -208,7 +208,7 @@ text-decoration: none;
 color: rgb(220, 55, 55);
 }
 
-/* Add styles for the "Sign up now" link */
+
 .signup-link {
 text-align: center;
 margin-top: 20px;

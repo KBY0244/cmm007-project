@@ -21,7 +21,7 @@
   }
   
   .logo-container {
-    height: 100%; /* Full height of the navbar */
+    height: 100%; 
     display: flex;
     align-items: center;
     
@@ -29,9 +29,9 @@
   
   
   .logo {
-    height: 140px; /* Adjust the height as needed */
-    object-fit: contain; /* This will prevent the logo from stretching */
-    max-width: 100%; /* Ensure the logo does not overflow the navbar */
+    height: 140px; 
+    object-fit: contain; 
+    max-width: 100%; 
   }
   
   .nav-buttons {
@@ -81,7 +81,7 @@ body {
     background-size: cover;
 }
 
-/* Center the form container */
+/* put form in the center */
 .form-container {
     display: flex;
     justify-content: center;
@@ -92,7 +92,7 @@ body {
     margin: auto 0;
 }
 
-/* Style the form */
+/* style form */
 .signup-form {
     max-width: 600px;
     width: 100%;
@@ -181,7 +181,7 @@ footer {
   }
   
   .social-media img {
-    height: 25px; /* Adjust as needed */
+    height: 25px; 
     transition: transform 0.2s ease;
   }
   

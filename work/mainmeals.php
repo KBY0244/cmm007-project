@@ -90,7 +90,7 @@
                 
                 $category_name = "Main meal"; 
 
-                //  fetch recipes of a specific category from the database
+                //  fetching recipes of a specific category from the database
                 $query = "SELECT * FROM addrecipe WHERE category = '$category_name'";
                 $result = mysqli_query($db, $query);
 
@@ -98,7 +98,7 @@
                 if(mysqli_num_rows($result) > 0) {
                     
                     while($row = mysqli_fetch_assoc($result)) {
-                        
+                        // Start recipe
                         echo '<div class="recipe">';
 
                         echo "<h3>{$row['recipeTitle']}</h3>";
@@ -144,7 +144,7 @@
                         echo "</div>";
                     }
                 } else {
-                    // If no recipes are found in the specified category
+                    
                     echo "No recipes found in the category: $category_name";
                 }
                 ?>

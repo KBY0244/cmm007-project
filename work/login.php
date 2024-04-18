@@ -1,7 +1,7 @@
 <?php
-session_start(); // Start the session
+session_start(); 
 
-include("connection.php"); //Establishing connection with our database
+include("connection.php"); 
     if(empty($_POST["email"]) || empty($_POST["password"]))
     {
         echo "Both fields are required.";
@@ -16,7 +16,7 @@ include("connection.php"); //Establishing connection with our database
 
          if(mysqli_num_rows($result) == 1)
         {
-            header("location: chefdashboard.php"); // Redirecting To another Page
+            header("location: chefdashboard.php"); 
         }
         else
         {
